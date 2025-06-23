@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt update && apt install -y python3
+
 mkdir -p tempdir/templates
 mkdir -p tempdir/static
 
