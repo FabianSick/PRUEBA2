@@ -1,7 +1,6 @@
 #!/bin/bash
 
-apt update && apt install -y python3
-
+# Solo crea carpetas y copia archivos, no intenta ejecutar nada
 mkdir -p tempdir/templates
 mkdir -p tempdir/static
 
@@ -9,5 +8,4 @@ cp sample_app.py tempdir/.
 cp -r templates/* tempdir/templates/.
 cp -r static/* tempdir/static/.
 
-cd tempdir
-python3 sample_app.py
+echo "Archivos preparados en tempdir. Ejecute sample_app.py manualmente para probar la app."
